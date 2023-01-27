@@ -1,0 +1,50 @@
+@import "colors";
+.paymentSuccess {
+	background-color: $pink;
+	width: 100%;
+	height: 60vh;
+
+	> main {
+		height: 100%;
+		background-color: white;
+		max-width: 900px;
+		margin: auto;
+		padding: 2rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		> h1 {
+			text-transform: uppercase;
+			text-align: center;
+			margin: 3rem;
+			font: 100 3rem "Roboto";
+		}
+		> a {
+			background-color: $red;
+			border: none;
+			color: white;
+			outline: none;
+			padding: 0.5rem 1rem;
+			margin: 1rem;
+			border-radius: 5px;
+			text-align: center;
+			cursor: pointer;
+			font-size: 1.1rem;
+		}
+	}
+}
+
+@media (max-width: 600px) {
+	.paymentSuccess {
+		> main {
+			> h1 {
+				margin: 2rem;
+				font: 100 2rem monospace;
+			}
+			> p {
+				font-size: 1rem;
+			}
+		}
+	}
+}
